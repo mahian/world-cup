@@ -12,7 +12,7 @@
 }
 /* defult utilitys */
 .container{
-    margin: 0 140px;
+    margin: 0 100px;
 }
 .btn{
     padding: 16px 25px;
@@ -34,7 +34,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
-.grid-item{}
+.grid-item{
+    border: 1px solid #ededed;
+    border-radius: 12px;
+}
 
 /* hero section design */
 .hero{
@@ -63,7 +66,7 @@
     position: absolute;
     width: 581px;
     bottom: 0;
-    right: 98px;
+    right: 0px;
 }
 /* up to date section design */
 .up_to_date{
@@ -126,6 +129,35 @@
 .news .icon_group span i{
     margin-right: 10px;
 }
+/* match section design */
+.match{
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.match .thumbnail{
+    display: flex;
+    align-items: center;
+}
+.match .thumbnail img{
+    width: 70px;
+}
+.match .thumbnail span{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 20px;
+}
+.match .title{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.match .date{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #979797;
+}
+
 /* footer design */
 footer{
     background-color: var(--bg-color);
