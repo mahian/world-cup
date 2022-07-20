@@ -92,6 +92,7 @@
     flex-direction: column;
     padding: 15px;
     border-radius: 8px;
+    max-height: 314px;
 }
 .side_menu a {
     padding: 17px;
@@ -229,6 +230,7 @@ footer ul li a:hover {
     .side_menu {
         background-color: white;
         flex-direction: row;
+        max-height: auto;
     }
     .side_menu a {
         border: 1px solid #ededed;
