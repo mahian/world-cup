@@ -1,75 +1,78 @@
 /* google font link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-:root{
+:root {
     --primary-color: red;
     --bg-color: #161616;
 }
 /* defult utilitys */
-.container{
+.container {
     margin: 0 100px;
 }
-.btn{
+.btn {
     padding: 16px 25px;
     background-color: var(--primary-color);
     border: none;
     border-radius: 5px;
     margin-top: 30px;
 }
-.btn a{
+.btn a {
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
-.btn i{
+.btn i {
     margin-left: 10px;
 }
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
-.grid-item{
+.grid-item {
     border: 1px solid #ededed;
     border-radius: 12px;
 }
 
 /* hero section design */
-.hero{
+.hero {
     display: flex;
-    align-items: center;
-    padding: 110px;
     background-color: var(--bg-color);
     border-radius: 10px;
     color: white;
     margin-top: 50px;
     position: relative;
+    align-items: flex-end;
 }
-.hero > div{
-    width: 50%;
+.hero > div {
+    /* width: 50%; */
 }
-.hero h1{
+.hero .text_content {
+    padding: 110px;
+}
+.hero .image_content {
+    height: 100%;
+}
+.hero h1 {
     font-size: 70px;
     line-height: 80px;
 }
-.hero p{
+.hero p {
     font-size: 16px;
     margin-top: 20px;
     line-height: 28px;
 }
 .hero img {
-    position: absolute;
-    width: 581px;
-    bottom: 0;
-    right: 0px;
+    width: 580px;
+    margin-bottom: -5px;
 }
 /* up to date section design */
-.up_to_date{
+.up_to_date {
     padding: 130px 0;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -98,10 +101,10 @@
     background-color: var(--primary-color);
     color: white;
 }
-.news img{
+.news img {
     width: 100%;
 }
-.news .info{
+.news .info {
     padding: 20px;
 }
 .news .catagory {
@@ -112,54 +115,54 @@
     margin-top: 20px;
     background-color: transparent;
 }
-.news p{
+.news p {
     font-weight: 600;
     margin-top: 15px;
     font-size: 18px;
     line-height: 27px;
 }
-.news .icon_group{
+.news .icon_group {
     margin-top: 20px;
 }
-.news .icon_group span{
+.news .icon_group span {
     font-size: 16px;
     color: #979797;
     margin-right: 30px;
 }
-.news .icon_group span i{
+.news .icon_group span i {
     margin-right: 10px;
 }
 /* match section design */
-.match{
+.match {
     padding: 50px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.match .thumbnail{
+.match .thumbnail {
     display: flex;
     align-items: center;
 }
-.match .thumbnail img{
+.match .thumbnail img {
     width: 70px;
 }
-.match .thumbnail span{
+.match .thumbnail span {
     font-weight: bold;
     font-size: 16px;
     margin: 0 20px;
 }
-.match .title{
+.match .title {
     margin-top: 20px;
     font-size: 20px;
 }
-.match .date{
+.match .date {
     font-size: 16px;
     margin-top: 10px;
     color: #979797;
 }
 
 /* footer design */
-footer{
+footer {
     background-color: var(--bg-color);
     padding: 130px 0;
     color: white;
@@ -167,28 +170,40 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-footer ul{
+footer ul {
     margin-top: 100px;
     display: flex;
 }
-footer ul li{
+footer ul li {
     list-style: none;
 }
-footer ul li{
+footer ul li {
     list-style: none;
     margin: 0 40px;
 }
-footer ul li a{
+footer ul li a {
     text-decoration: none;
     color: white;
     transition: 0.3s;
 }
-footer ul li i{
+footer ul li i {
     font-size: 25px;
 }
-footer ul li a:hover{
+footer ul li a:hover {
     color: var(--primary-color);
 }
 
-
-
+/* responsive for laptop device */
+@media only screen and (max-width: 1250px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero > div {
+        width: 100%;
+    }
+    .hero img{
+        position: relative;
+        margin-top: 30px;
+    }
+}
